@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hero } from './components/Hero';
 import { Portfolio } from './components/Portfolio';
-import { GenAIStudio } from './components/GenAIStudio';
+//import { GenAIStudio } from './components/GenAIStudio';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { profileData } from './data/portfolioData';
 
@@ -19,10 +19,10 @@ const App: React.FC = () => {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
             <a href="#" className="hover:text-white transition-colors">Home</a>
             <a href="#portfolio" className="hover:text-white transition-colors">Projects</a>
-            <a href="#ai-studio" className="text-primary-400 hover:text-primary-300 transition-colors flex items-center gap-1">
+            {/*<a href="#ai-studio" className="text-primary-400 hover:text-primary-300 transition-colors flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-primary-400 animate-pulse"></span>
               GenAI Studio
-            </a>
+            </a>*/}
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </div>
           <a href="#contact" className="md:hidden text-primary-400 font-medium">Menu</a>
@@ -40,7 +40,8 @@ const App: React.FC = () => {
            <div className="h-px w-24 bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
         </div>
 
-        <GenAIStudio />
+        {/* <GenAIStudio /> */}
+
       </main>
 
       <footer id="contact" className="bg-slate-950 pt-20 pb-10 border-t border-slate-900">
