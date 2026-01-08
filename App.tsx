@@ -7,7 +7,7 @@ import { profileData } from './data/portfolioData';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-primary-500/30">
+   <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-primary-500/30">
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
