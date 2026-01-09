@@ -57,15 +57,18 @@ export const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative hidden lg:block">
-           <div className="relative z-10 bg-[#FBF7F3] p-3 rounded-3xl border border-[#BF9F93]/40 shadow-xl rotate-2 hover:rotate-0 transition-all duration-500">
+        <div className="relative hidden lg:flex justify-center">
+          <div className="relative z-10 w-72">
+            <div className="bg-[#FBF7F3] p-3 rounded-3xl border border-[#BF9F93]/40 shadow-xl rotate-1 hover:rotate-0 transition-all duration-500">
               <img
-                src="public/images/headshot.JPG"
+                src="/images/headshot.JPG"
                 alt="Eugenie headshot"
                 className="w-full aspect-[4/5] object-cover rounded-2xl"
               />
-           </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
   );
