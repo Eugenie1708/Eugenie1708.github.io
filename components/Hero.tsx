@@ -16,9 +16,10 @@ export const Hero: React.FC = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full border border-[#D99441]/40 bg-[#D99441]/10 text-[#BF7636] text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-[#733F34]/20 bg-[#FBF7F3] text-[#733F34]text-sm font-medium mb-4">
               Available for Internships
             </span>
+
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#733F34]">
               {profileData.tagline.split(' ').slice(0, 3).join(' ')}{' '}
