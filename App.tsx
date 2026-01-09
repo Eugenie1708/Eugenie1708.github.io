@@ -11,23 +11,26 @@ const App: React.FC = () => {
 
       
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F7F3EE]/80 backdrop-blur-md border-b border-[#BF9F93]/50">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
-            <span className="w-8 h-8 bg-gradient-to-br from-primary-500 to-purple-600 rounded-lg flex items-center justify-center text-xs text-white">{profileData.initials}</span>
-            <span>{profileData.name}</span>
-          </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#733F34]/70">
-            <a href="#" className="hover:text-[#733F34] transition-colors">Home</a>
-            <a href="#portfolio" className="hover:text-[#733F34] transition-colors">Projects</a>
-            {/*<a href="#ai-studio" className="text-primary-400 hover:text-primary-300 transition-colors flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-primary-400 animate-pulse"></span>
-              GenAI Studio
-            </a>*/}
-            <a href="#contact" className="hover:text-[#733F34] transition-colors">Contact</a>
-          </div>
-        </div>
-      </nav>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FBF7F3] backdrop-blur-md border-b border-[#E6DED6]">
+  <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+    {/* Brand / Name */}
+    <div className="text-lg font-semibold tracking-tight flex items-center gap-3 text-[#733F34]">
+      <span className="w-9 h-9 rounded-full bg-[#D99441] flex items-center justify-center text-sm font-bold text-white">
+        EL
+      </span>
+      <span>Eugenie (I Chia) Lai</span>
+    </div>
+
+    {/* Navigation */}
+    <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#8B6B5E]">
+      <a href="#" className="hover:text-[#733F34] transition-colors">Home</a>
+      <a href="#portfolio" className="hover:text-[#733F34] transition-colors">Projects</a>
+    </div>
+
+  </div>
+</nav>
+
 
       <main>
         <Hero />
