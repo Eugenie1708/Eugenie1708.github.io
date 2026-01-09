@@ -26,6 +26,14 @@ const App: React.FC = () => {
     <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#8B6B5E]">
       <a href="#" className="hover:text-[#733F34] transition-colors">Home</a>
       <a href="#portfolio" className="hover:text-[#733F34] transition-colors">Projects</a>
+      <a href={profileData.social.linkedin} target="_blank" rel="noreferrer"
+     className="hover:text-[#733F34] transition-colors">
+    LinkedIn
+  </a>
+  <a href={profileData.social.github} target="_blank" rel="noreferrer"
+     className="hover:text-[#733F34] transition-colors">
+    GitHub
+  </a>
     </div>
 
   </div>
