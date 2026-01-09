@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full border border-[#733F34]/20 bg-[#FBF7F3] text-[#733F34]text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-[#733F34]/20 bg-[#FBF7F3] text-[#733F34] text-sm font-medium mb-4">
               Available for Internships
             </span>
 
@@ -58,25 +58,12 @@ export const Hero: React.FC = () => {
         </div>
 
         <div className="relative hidden lg:block">
-           <div className="relative z-10 bg-slate-900 p-2 rounded-2xl border border-slate-800 shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500">
-              <img 
-                src="https://picsum.photos/600/600?grayscale" 
-                alt="Analyst Workspace" 
-                className="rounded-xl w-full h-auto opacity-80"
+           <div className="relative z-10 bg-[#FBF7F3] p-3 rounded-3xl border border-[#BF9F93]/40 shadow-xl rotate-2 hover:rotate-0 transition-all duration-500">
+              <img
+                src="/images/headshot.jpg"
+                alt="Eugenie headshot"
+                className="w-full aspect-[4/5] object-cover rounded-2xl"
               />
-              <div className="absolute bottom-6 left-6 right-6 bg-slate-950/90 backdrop-blur-md p-4 rounded-lg border border-slate-800">
-                 <div className="flex justify-between items-center mb-2">
-                    <span className="text-xs font-mono text-primary-400">ANALYSIS_COMPLETE</span>
-                    <span className="text-xs text-slate-500">Just now</span>
-                 </div>
-                 <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
-                    <div className="h-full bg-primary-500 w-[85%] animate-pulse"></div>
-                 </div>
-                 <div className="mt-2 flex justify-between text-xs text-slate-400">
-                    <span>Model Accuracy</span>
-                    <span className="text-white font-bold">98.4%</span>
-                 </div>
-              </div>
            </div>
         </div>
       </div>
