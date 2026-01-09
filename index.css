@@ -1,1 +1,26 @@
 /* index.css - global styles entry (can be empty for now) */
+:root {
+  /* Brand palette */
+  --misty: 129 159 166;   /* #819FA6 */
+  --gold: 217 148 65;     /* #D99441 */
+  --copper: 191 118 54;   /* #BF7636 */
+  --blush: 191 159 147;   /* #BF9F93 */
+  --cocoa: 115 63 52;     /* #733F34 */
+
+  /* Semantic tokens */
+  --bg: 255 252 250;      /* #FFFCFA */
+  --surface: 243 236 231; /* #F3ECE7 */
+  --border: 232 221 214;  /* #E8DDD6 */
+
+  --text: var(--cocoa);
+  --muted-text: 92 79 74; /* 深米灰，讓閱讀舒服 */
+  --link: var(--misty);
+
+  --primary: var(--gold);
+  --primary-2: var(--copper);
+}
+
+html, body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+}
