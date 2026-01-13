@@ -33,14 +33,14 @@ export const Hero: React.FC = () => {
             {profileData.about}
           </p>
 
-
+{/*
           <div className="flex flex-wrap gap-4">
             <button className="px-6 py-3 bg-[#D99441] hover:bg-[#BF7636] text-white rounded-lg font-semibold transition-all shadow-lg shadow-[#D99441]/30 flex items-center">
               View My Work
               <BarChart3 className="ml-2 w-5 h-5" />
             </button>
           </div>
-
+*/}
           <div className="flex items-center gap-8 pt-4 border-t border-[#BF9F93]/40">
             <div className="flex items-center gap-2 text-[#733F34]/70">
               <Database className="w-5 h-5 text-[#819FA6]" />
