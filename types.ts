@@ -1,5 +1,5 @@
 export enum ProjectCategory {
-  BLOCKCHAIN = 'Blockchain',
+  FINANCE = 'Finance',
   UI_UX = 'UI/UX Design',
   BI = 'BI & Strategy',
   DATA_SCI = 'Data Science',

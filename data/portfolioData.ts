@@ -18,7 +18,7 @@ export const portfolioProjects: Project[] = [
   {
     id: 'usdt-analysis',
     title: 'USDT Competitive Intelligence Report',
-    category: ProjectCategory.BLOCKCHAIN,
+    category: ProjectCategory.FINANCE,
     description: 'A comprehensive on-chain analysis comparing USDT market positioning against USDC, DAI, and PYUSD using Dune Analytics and Python.',
     longDescription: 'Identified that while USDC dominates DeFi, USDT holds a massive lead in retail/micro-transactions (<$1k). Developed a "Stickiness/Velocity" metric showing most wallet interactions are single-day events. Proposed aggressive Layer 2 integration (Arbitrum/Base) to defend the retail moat.',
     imageUrl: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=1000',
@@ -100,7 +100,7 @@ export const portfolioProjects: Project[] = [
     impact: 'Demonstrated ability to handle large survey data, text processing, and lead social science research projects.',
     resources: []
   },
-  {
+  /* Additional Data Science Projects{
     id: 'substance-use',
     title: 'Substance Use Prediction App',
     category: ProjectCategory.DATA_SCI,
@@ -110,6 +110,8 @@ export const portfolioProjects: Project[] = [
     technologies: ['Python', 'Scikit-learn', 'PHP', 'SQL'],
     resources: []
   },
+  */
+ /*
   {
     id: 'traffic-accidents',
     title: 'Taiwan Traffic Accident Analysis',
@@ -120,6 +122,7 @@ export const portfolioProjects: Project[] = [
     technologies: ['Python', 'Pandas', 'Scikit-learn'],
     resources: []
   },
+  */
   {
     id: 'digital-adaptation',
     title: 'Digital Adaptation Analysis',
@@ -143,6 +146,7 @@ export const portfolioProjects: Project[] = [
     impact: 'Won 3rd place in Internship Proposal Competition.',
     resources: []
   },
+  /*
   {
     id: 'vc-tooling',
     title: 'VC Due Diligence Tooling',
@@ -153,4 +157,5 @@ export const portfolioProjects: Project[] = [
     impact: 'Efficiently delivered comprehensive due diligence reports.',
     resources: []
   },
+  */
 ];
