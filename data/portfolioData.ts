@@ -5,7 +5,7 @@ export const profileData = {
   initials: "EL",
   title: "Competitive Intelligence Analyst / Data Lead",
   tagline: "Bridging Data and Strategic Action",
-  about: "I enjoy solving problems through data analysis that bridges the gap between raw numbers and strategic action. With expertise in Tableau, Python, SQL, and Blockchain Analytics, I transform complex datasets into clear, actionable business insights. I am deeply interested in Business Intelligence and Strategy, with hands-on experience in Power BI, Tableau, Python, R, SQL, NoSQL, and Figma.",
+  about: "I enjoy solving problems through data analysis that bridges the gap between raw numbers and strategic action. With experience in Data Visualization, and Business Analytics, I transform complex datasets into clear, actionable business insights. I am deeply interested in Business Intelligence and Strategy, with hands-on experience in Power BI, Tableau, Python, R, SQL, NoSQL, and Figma.",
   social: {
     linkedin: "https://www.linkedin.com/in/lai-ichia-eugenie/", // Placeholder based on name
     github: "https://github.com/Eugenie1708",
