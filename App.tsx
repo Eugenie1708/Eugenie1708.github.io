@@ -55,25 +55,42 @@ const App: React.FC = () => {
 
       </main>
 
-      <footer id="contact" className="bg-slate-950 pt-20 pb-10 border-t border-slate-900">
+      <footer id="contact" className="bg-[#FBF7F3] pt-16 pb-10 border-t border-[#BF9F93]/40">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-white mb-6">Let's Tell Stories with Data</h2>
-          <p className="text-slate-400 mb-8 max-w-lg mx-auto">
-            Currently looking for internship opportunities. I bring technical rigor, creative visualization, and cutting-edge AI skills to the table.
+          <h2 className="text-2xl md:text-3xl font-bold text-[#733F34] mb-4">
+          Let’s Tell Stories with Data
+          </h2>
+
+          <p className="text-[#733F34]/70 mb-8 max-w-xl mx-auto leading-relaxed">
+      Currently looking for internship opportunities. I bring technical rigor, thoughtful visualization,
+      and product-minded analytics to the table.
           </p>
-          
-          <div className="flex justify-center gap-6 mb-12">
-            <a href={profileData.social.linkedin} target="_blank" rel="noreferrer" className="p-3 bg-slate-900 rounded-full text-slate-400 hover:text-white hover:bg-slate-800 transition-all border border-slate-800">
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a href={profileData.social.github} target="_blank" rel="noreferrer" className="p-3 bg-slate-900 rounded-full text-slate-400 hover:text-white hover:bg-slate-800 transition-all border border-slate-800">
-              <Github className="w-6 h-6" />
-            </a>
-          </div>
-          
-          <p className="text-slate-600 text-sm">
-            © {new Date().getFullYear()} {profileData.name} Portfolio. Built with React & Gemini 2.5.
-          </p>
+
+        <div className="flex justify-center gap-4 mb-10">
+          <a
+            href={profileData.social.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="p-3 rounded-full bg-white border border-[#BF9F93]/40 text-[#733F34]/70 hover:text-[#733F34] hover:border-[#D99441]/50 hover:shadow-md transition-all"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+
+          <a
+            href={profileData.social.github}
+            target="_blank"
+            rel="noreferrer"
+            className="p-3 rounded-full bg-white border border-[#BF9F93]/40 text-[#733F34]/70 hover:text-[#733F34] hover:border-[#819FA6]/50 hover:shadow-md transition-all"
+            aria-label="GitHub"
+          >
+          <Github className="w-5 h-5" />
+          </a>
+        </div>
+
+        <p className="text-[#733F34]/45 text-sm">
+        © {new Date().getFullYear()} {profileData.name}. All rights reserved.
+        </p>
         </div>
       </footer>
     </div>
