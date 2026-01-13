@@ -43,15 +43,6 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <Portfolio />
-        
-        {/* Transition Divider */}
-        <div className="py-12 flex justify-center items-center">
-           <div className="h-px w-24 bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
-           <span className="px-4 text-slate-600 text-sm tracking-widest uppercase">Innovation</span>
-           <div className="h-px w-24 bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
-        </div>
-
-        {/* <GenAIStudio /> */}
 
       </main>
 
