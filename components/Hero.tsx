@@ -22,13 +22,18 @@ export const Hero: React.FC = () => {
 
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#733F34]">
-              {profileData.tagline.split(' ').slice(0, 3).join(' ')}{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D99441] to-[#BF7636]">
-                {profileData.tagline.split(' ').slice(3).join(' ')}
-              </span>
+             I’m{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D99441] to-[#BF7636]">
+              Eugenie Lai
+            </span>
             </h1>
+
           </div>
           
+          <p className="text-lg text-[#733F34]/80 max-w-xl leading-relaxed">
+            I turn data into strategic action through visualization and business analytics.
+          </p>
+
           <p className="text-lg text-[#733F34]/80 max-w-xl leading-relaxed">
             {profileData.about}
           </p>
