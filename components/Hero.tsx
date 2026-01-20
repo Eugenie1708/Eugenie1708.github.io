@@ -29,11 +29,11 @@ export const Hero: React.FC = () => {
             </h1>
 
           </div>
-          
+          {/*}
           <p className="text-lg text-[#733F34]/80 max-w-xl leading-relaxed">
-            I turn data into strategic action through visualization and business analytics.
+            I turn data into strategic action through data visualization and business analytics.
           </p>
-
+          */}
           <p className="text-lg text-[#733F34]/80 max-w-xl leading-relaxed">
             {profileData.about}
           </p>
