@@ -2,11 +2,10 @@
 
 This repository contains the source code for my personal portfolio website, showcasing selected projects in **Business Intelligence, Data Analytics, Strategy, Finance, and UI/UX design**.
 
-🌐 **Live site**: https://eugenie1708.github.io
-📍 **Currently**: MS in Business Analytics, Gies College of Business, UIUC
+🌐 **Live site**: https://eugenie1708.github.io <br>
+📍 **Currently**: MS in Business Analytics, Gies College of Business, UIUC <br>
 🎯 **Focus**: Turning data into strategic action
 
----
 
 ## About This Project
 
@@ -20,6 +19,5 @@ I then personally:
 
 The goal of this portfolio is to present selected work in **data analytics, business intelligence, and strategy**, and demonstrate how I translate data into actionable insights.
 
----
 
 © 2026 Eugenie Lai
