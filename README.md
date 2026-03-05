@@ -1,11 +1,9 @@
 ![Portfolio Preview](assets/portfolio-preview.png)
 
-# Eugenie Lai — Data & Strategy Portfolio
-
 This repository contains the source code for my personal portfolio website, showcasing selected projects in **Business Intelligence, Data Analytics, Strategy, Finance, and UI/UX design**.
 
-🌐 **Live site**: https://eugenie1708.github.io  
-📍 **Currently**: MS in Business Analytics  
+🌐 **Live site**: https://eugenie1708.github.io
+📍 **Currently**: MS in Business Analytics, Gies College of Business, UIUC
 🎯 **Focus**: Turning data into strategic action
 
 ---
