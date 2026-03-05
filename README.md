@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+![Portfolio Preview](assets/portfolio-preview.png)
 
-# Run and deploy your AI Studio app
+# Eugenie Lai — Data & Strategy Portfolio
 
-This contains everything you need to run your app locally.
+This repository contains the source code for my personal portfolio website, showcasing selected projects in **Business Intelligence, Data Analytics, Strategy, Finance, and UI/UX design**.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ufLI22Tc6RrBdO0kyuUx5h63ntWtTEav
+🌐 **Live site**: https://eugenie1708.github.io  
+📍 **Currently**: MS in Business Analytics  
+🎯 **Focus**: Turning data into strategic action
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## About This Project
 
+This portfolio website was built with the help of **Google AI Studio**, which assisted in generating the initial code structure and development setup.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+I then personally:
+- organized and curated all project content
+- structured the portfolio sections
+- designed the layout and visual hierarchy
+- customized the color system and styling
+
+The goal of this portfolio is to present selected work in **data analytics, business intelligence, and strategy**, and demonstrate how I translate data into actionable insights.
+
+---
+
+© 2026 Eugenie Lai
