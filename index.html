@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             fontFamily: {
@@ -31,10 +32,17 @@
       }
     </script>
     <style>
+      /* start with a light default, let Tailwind and React control colors once mounted */
       body {
-        background-color: #0f172a;
-        color: #f8fafc;
+        background-color: #ffffff;
+        color: #333333;
       }
+      /* dark class on html or any ancestor should invert these */
+      .dark body {
+        background-color: #111111;
+        color: #F5EEE8;
+      }
+
       .scrollbar-hide::-webkit-scrollbar {
           display: none;
       }

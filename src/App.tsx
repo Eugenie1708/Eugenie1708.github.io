@@ -12,8 +12,24 @@ const App: React.FC = () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       setDarkMode(true);
+    } else if (savedTheme === 'light') {
+      setDarkMode(false);
+    } else {
+      // no saved preference; fall back to system setting
+      const prefers = window.matchMedia('(prefers-color-scheme: dark)');
+      setDarkMode(prefers.matches);
     }
   }, []);
+
+  // synchronize `dark` class on root element so Tailwind dark variants work
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   useEffect(() => {
     localStorage.setItem('theme', darkMode ? 'dark' : 'light');
@@ -21,20 +37,16 @@ const App: React.FC = () => {
 
   return (
    <div
-  className={`min-h-screen font-sans selection:bg-[rgb(var(--primary))]/25 transition-colors duration-300 ${
-    darkMode
-      ? 'bg-[#111111] text-[#F5EEE8]'
-      : 'bg-[rgb(var(--bg))] text-[rgb(var(--text))]'
-  }`}
+  className={`${darkMode ? 'dark' : ''} min-h-screen font-sans selection:bg-[rgb(var(--primary))]/25 transition-colors duration-300 bg-[rgb(var(--bg))] text-[rgb(var(--text))] dark:bg-[#111111] dark:text-[#F5EEE8]`}
 >
 
       
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FBF7F3] backdrop-blur-md border-b border-[#E6DED6]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FBF7F3] dark:bg-gray-900 backdrop-blur-md border-b border-[#E6DED6] dark:border-gray-700">
   <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
     {/* Brand / Name */}
-    <div className="text-lg font-semibold tracking-tight flex items-center gap-3 text-[#733F34]">
+    <div className="text-lg font-semibold tracking-tight flex items-center gap-3 text-[#733F34] dark:text-[#F5EEE8]">
       <span className="w-9 h-9 rounded-full bg-[#D99441] flex items-center justify-center text-sm font-bold text-white">
         EL
       </span>
@@ -42,7 +54,7 @@ const App: React.FC = () => {
     </div>
 
     {/* Navigation */}
-    <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#8B6B5E]">
+    <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#8B6B5E] dark:text-[#ccc]">
       <a href="#" className="hover:text-[#733F34] transition-colors">Home</a>
       <a href="#portfolio" className="hover:text-[#733F34] transition-colors">Projects</a>
       <a href={profileData.social.linkedin} target="_blank" rel="noreferrer"
@@ -55,7 +67,7 @@ const App: React.FC = () => {
   </a>
   <button
     onClick={() => setDarkMode(!darkMode)}
-    className="px-3 py-1.5 rounded-full border border-[#BF9F93]/40 bg-white text-[#733F34] text-sm transition-all"
+    className="px-3 py-1.5 rounded-full border border-[#BF9F93]/40 bg-white dark:bg-gray-800 text-[#733F34] dark:text-[#F5EEE8] text-sm transition-all"
   >
     {darkMode ? 'Light' : 'Dark'}
   </button>
@@ -71,13 +83,13 @@ const App: React.FC = () => {
 
       </main>
 
-      <footer id="contact" className="bg-[#FBF7F3] pt-16 pb-10 border-t border-[#BF9F93]/40">
+      <footer id="contact" className="bg-[#FBF7F3] dark:bg-gray-900 pt-16 pb-10 border-t border-[#BF9F93]/40 dark:border-gray-700">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#733F34] mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#733F34] dark:text-[#F5EEE8] mb-4">
           Let’s Tell Stories with Data
           </h2>
 
-          <p className="text-[#733F34]/70 mb-8 max-w-xl mx-auto leading-relaxed">
+          <p className="text-[#733F34]/70 dark:text-[#F5EEE8]/70 mb-8 max-w-xl mx-auto leading-relaxed">
       Currently looking for internship opportunities. I bring technical rigor, thoughtful visualization,
       and product-minded analytics to the table.
           </p>
@@ -87,7 +99,7 @@ const App: React.FC = () => {
             href={profileData.social.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="p-3 rounded-full bg-white border border-[#BF9F93]/40 text-[#733F34]/70 hover:text-[#733F34] hover:border-[#D99441]/50 hover:shadow-md transition-all"
+            className="p-3 rounded-full bg-white dark:bg-gray-800 border border-[#BF9F93]/40 dark:border-gray-600 text-[#733F34]/70 dark:text-[#F5EEE8]/70 hover:text-[#733F34] hover:border-[#D99441]/50 hover:shadow-md transition-all"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
@@ -97,7 +109,7 @@ const App: React.FC = () => {
             href={profileData.social.github}
             target="_blank"
             rel="noreferrer"
-            className="p-3 rounded-full bg-white border border-[#BF9F93]/40 text-[#733F34]/70 hover:text-[#733F34] hover:border-[#819FA6]/50 hover:shadow-md transition-all"
+            className="p-3 rounded-full bg-white dark:bg-gray-800 border border-[#BF9F93]/40 dark:border-gray-600 text-[#733F34]/70 dark:text-[#F5EEE8]/70 hover:text-[#733F34] hover:border-[#819FA6]/50 hover:shadow-md transition-all"
             aria-label="GitHub"
           >
           <Github className="w-5 h-5" />

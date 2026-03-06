@@ -4,7 +4,7 @@ import { profileData } from '../data/portfolioData';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative pt-32 pb-20 px-6 overflow-hidden bg-white text-[#733F34]">
+    <section className="relative pt-32 pb-20 px-6 overflow-hidden bg-white dark:bg-[#111111] text-[#733F34] dark:text-[#F5EEE8]">
       {/* Background Elements */}
 
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-30">
@@ -16,12 +16,12 @@ export const Hero: React.FC = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full border border-[#733F34]/20 bg-[#FBF7F3] text-[#733F34] text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-[#733F34]/20 bg-[#FBF7F3] dark:bg-gray-800 text-[#733F34] dark:text-[#F5EEE8] text-sm font-medium mb-4">
               Available for Internships
             </span>
 
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#733F34]">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#733F34] dark:text-[#F5EEE8] dark:text-[#F5EEE8]">
              I’m{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D99441] to-[#BF7636]">
               Eugenie Lai
@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
             I turn data into strategic action through data visualization and business analytics.
           </p>
           */}
-          <p className="text-lg text-[#733F34]/80 max-w-xl leading-relaxed">
+          <p className="text-lg text-[#733F34]/80 dark:text-[#F5EEE8]/80 max-w-xl leading-relaxed">
             {profileData.about}
           </p>
 
@@ -47,15 +47,15 @@ export const Hero: React.FC = () => {
           </div>
 */}
           <div className="flex items-center gap-8 pt-4 border-t border-[#BF9F93]/40">
-            <div className="flex items-center gap-2 text-[#733F34]/70">
+            <div className="flex items-center gap-2 text-[#733F34]/70 dark:text-[#F5EEE8]/70">
               <Database className="w-5 h-5 text-[#819FA6]" />
               <span className="text-sm font-medium">Data Engineering</span>
             </div>
-            <div className="flex items-center gap-2 text-[#733F34]/70">
+            <div className="flex items-center gap-2 text-[#733F34]/70 dark:text-[#F5EEE8]/70">
               <BarChart3 className="w-5 h-5 text-[#D99441]" />
               <span className="text-sm font-medium">Visualization</span>
             </div>
-            <div className="flex items-center gap-2 text-[#733F34]/70">
+            <div className="flex items-center gap-2 text-[#733F34]/70 dark:text-[#F5EEE8]/70">
               <BrainCircuit className="w-5 h-5 text-[#BF7636]" />
               <span className="text-sm font-medium">Generative AI</span>
             </div>
@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
 
         <div className="relative hidden lg:flex justify-center">
           <div className="relative z-10 w-72">
-            <div className="bg-[#FBF7F3] p-3 rounded-3xl border border-[#BF9F93]/40 shadow-xl rotate-1 hover:rotate-0 transition-all duration-500">
+            <div className="bg-[#FBF7F3] dark:bg-gray-800 p-3 rounded-3xl border border-[#BF9F93]/40 dark:border-gray-600 shadow-xl rotate-1 hover:rotate-0 transition-all duration-500">
               <img
                 src="/images/headshot.JPG"
                 alt="Eugenie headshot"

@@ -24,3 +24,11 @@ html, body {
   background: rgb(var(--bg));
   color: rgb(var(--text));
 }
+
+/* when a dark class is present anywhere above, tweak the variable set */
+html.dark {
+  --bg: 17 17 17;      /* #111111 */
+  --surface: 34 34 34; /* darker surface */
+  --text: 245 238 232; /* #F5EEE8 */
+  --link: 217 148 65;  /* reuse gold as accent */
+}

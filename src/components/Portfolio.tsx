@@ -18,7 +18,7 @@ export const Portfolio: React.FC = () => {
   return (
     <section id="portfolio" className="py-20 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-[#733F34] mb-4">Selected Works</h2>
+        <h2 className="text-3xl font-bold text-[#733F34] dark:text-[#F5EEE8] mb-4">Selected Works</h2>
 
         <div className="flex flex-wrap justify-center gap-2">
           {categories.map((cat) => {
@@ -33,7 +33,7 @@ export const Portfolio: React.FC = () => {
                   'border',
                   isActive
                     ? 'bg-[#D99441] text-white border-[#D99441] shadow-md shadow-[#D99441]/25'
-                    : 'bg-[#FBF7F3] text-[#733F34]/80 border-[#BF9F93]/50 hover:border-[#D99441]/60 hover:bg-white',
+                    : 'bg-[#FBF7F3] dark:bg-gray-800 text-[#733F34]/80 dark:text-[#F5EEE8]/80 border-[#BF9F93]/50 dark:border-gray-600 hover:border-[#D99441]/60 hover:bg-white dark:hover:bg-gray-700',
                 ].join(' ')}
               >
                 {cat}
@@ -60,12 +60,12 @@ export const Portfolio: React.FC = () => {
           onClick={() => setSelectedProject(null)}
         >
           <div
-            className="bg-[#FBF7F3] rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-[#BF9F93]/60 shadow-2xl relative"
+            className="bg-[#FBF7F3] dark:bg-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-[#BF9F93]/60 dark:border-gray-600 shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 p-2 bg-white/70 hover:bg-white rounded-full text-[#733F34] transition-colors z-10 border border-[#BF9F93]/50"
+              className="absolute top-4 right-4 p-2 bg-white/70 dark:bg-gray-700 hover:bg-white dark:hover:bg-gray-600 rounded-full text-[#733F34] dark:text-[#F5EEE8] transition-colors z-10 border border-[#BF9F93]/50 dark:border-gray-600"
             >
               <X className="w-6 h-6" />
             </button>
@@ -81,7 +81,7 @@ export const Portfolio: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#733F34]/65 via-transparent to-transparent"></div>
 
               <div className="absolute bottom-6 left-6 right-6">
-                <span className="inline-block px-3 py-1 text-xs font-semibold bg-[#FBF7F3]/95 text-[#733F34] border border-[#BF9F93]/60 rounded-full mb-3">
+                <span className="inline-block px-3 py-1 text-xs font-semibold bg-[#FBF7F3]/95 dark:bg-gray-700 text-[#733F34] dark:text-[#F5EEE8] border border-[#BF9F93]/60 dark:border-gray-600 rounded-full mb-3">
                   {selectedProject.category}
                 </span>
 
@@ -94,16 +94,16 @@ export const Portfolio: React.FC = () => {
             <div className="p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2 space-y-6">
                 <div>
-                  <h4 className="text-xl font-bold text-[#733F34] mb-2">Project Overview</h4>
-                  <p className="text-[#733F34]/80 leading-relaxed text-lg">
+                  <h4 className="text-xl font-bold text-[#733F34] dark:text-[#F5EEE8] mb-2">Project Overview</h4>
+                  <p className="text-[#733F34]/80 dark:text-[#F5EEE8]/80 leading-relaxed text-lg">
                     {selectedProject.description}
                   </p>
                 </div>
 
                 {selectedProject.longDescription && (
                   <div>
-                    <h4 className="text-xl font-bold text-[#733F34] mb-2">The Details</h4>
-                    <p className="text-[#733F34]/70 leading-relaxed">
+                    <h4 className="text-xl font-bold text-[#733F34] dark:text-[#F5EEE8] mb-2">The Details</h4>
+                    <p className="text-[#733F34]/70 dark:text-[#F5EEE8]/70 leading-relaxed">
                       {selectedProject.longDescription}
                     </p>
                   </div>
@@ -114,7 +114,7 @@ export const Portfolio: React.FC = () => {
                     <h4 className="text-[#BF7636] font-bold mb-1 flex items-center gap-2">
                       <BarChart className="w-4 h-4" /> Business Impact
                     </h4>
-                    <p className="text-[#733F34]/85">{selectedProject.impact}</p>
+                    <p className="text-[#733F34]/85 dark:text-[#F5EEE8]/85">{selectedProject.impact}</p>
                   </div>
                 )}
               </div>
@@ -129,7 +129,7 @@ export const Portfolio: React.FC = () => {
                     {selectedProject.technologies.map((t) => (
                       <span
                         key={t}
-                        className="px-3 py-1.5 bg-white/60 border border-[#BF9F93]/45 rounded-md text-[#733F34]/80 text-sm"
+                        className="px-3 py-1.5 bg-white/60 dark:bg-gray-700 border border-[#BF9F93]/45 dark:border-gray-600 rounded-md text-[#733F34]/80 dark:text-[#F5EEE8]/80 text-sm"
                       >
                         {t}
                       </span>
@@ -140,7 +140,7 @@ export const Portfolio: React.FC = () => {
                 {/* Resources */}
                 {(selectedProject.resources && selectedProject.resources.length > 0) ? (
                   <div className="pt-6 border-t border-[#BF9F93]/45 space-y-3">
-                    <h5 className="text-sm font-bold text-[#733F34]/60 uppercase tracking-wider">
+                    <h5 className="text-sm font-bold text-[#733F34]/60 dark:text-[#F5EEE8]/60 uppercase tracking-wider">
                       Resources
                     </h5>
 
@@ -158,7 +158,7 @@ export const Portfolio: React.FC = () => {
                             'border',
                             isPrimary
                               ? 'bg-[#D99441] text-white border-[#D99441] hover:bg-[#BF7636]'
-                              : 'bg-white/60 text-[#733F34] border-[#BF9F93]/55 hover:bg-white',
+                              : 'bg-white/60 dark:bg-gray-700 text-[#733F34] dark:text-[#F5EEE8] border-[#BF9F93]/55 dark:border-gray-600 hover:bg-white dark:hover:bg-gray-600',
                           ].join(' ')}
                         >
                           {res.label.toLowerCase().includes('github') || res.label.toLowerCase().includes('code') ? (
