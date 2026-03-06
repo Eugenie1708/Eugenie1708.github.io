@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Hero } from './components/Hero';
 import { Portfolio } from './components/Portfolio';
 //import { GenAIStudio } from './components/GenAIStudio';
@@ -6,6 +6,19 @@ import { Github, Linkedin} from 'lucide-react';
 import { profileData } from './data/portfolioData';
 
 const App: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
+
   return (
    <div className="min-h-screen bg-[rgb(var(--bg))] text-[rgb(var(--text))] font-sans selection:bg-[rgb(var(--primary))]/25">
 
@@ -34,6 +47,12 @@ const App: React.FC = () => {
      className="hover:text-[#733F34] transition-colors">
     GitHub
   </a>
+  <button
+    onClick={() => setDarkMode(!darkMode)}
+    className="px-3 py-1.5 rounded-full border border-[#BF9F93]/40 bg-white text-[#733F34] text-sm transition-all"
+  >
+    {darkMode ? 'Light' : 'Dark'}
+  </button>
     </div>
 
   </div>
