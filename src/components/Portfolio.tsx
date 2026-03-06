@@ -110,11 +110,11 @@ export const Portfolio: React.FC = () => {
                 )}
 
                 {selectedProject.impact && (
-                  <div className="bg-white/60 border border-[#D99441]/35 p-4 rounded-xl">
-                    <h4 className="text-[#BF7636] font-bold mb-1 flex items-center gap-2">
+                  <div className="bg-white/60 dark:bg-[#1E293B] border border-[#D99441]/35 dark:border-[#D99441]/30 p-4 rounded-xl">
+                    <h4 className="text-[#D99441] font-bold mb-1 flex items-center gap-2">
                       <BarChart className="w-4 h-4" /> Business Impact
                     </h4>
-                    <p className="text-[#733F34]/85 dark:text-[#F5EEE8]/85">{selectedProject.impact}</p>
+                    <p className="text-[#733F34]/85 dark:text-[#E5E7EB]/85">{selectedProject.impact}</p>
                   </div>
                 )}
               </div>

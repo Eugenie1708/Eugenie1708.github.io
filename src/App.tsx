@@ -117,6 +117,7 @@ const App: React.FC = () => {
         </div>
 
         <p className="text-[#733F34]/45 text-sm">
+        {/* use the data object so the name (including parentheses) stays correct */}
         © {new Date().getFullYear()} {profileData.name}. All rights reserved.
         </p>
         </div>
