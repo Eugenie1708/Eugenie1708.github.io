@@ -20,7 +20,13 @@ const App: React.FC = () => {
   }, [darkMode]);
 
   return (
-   <div className="min-h-screen bg-[rgb(var(--bg))] text-[rgb(var(--text))] font-sans selection:bg-[rgb(var(--primary))]/25">
+   <div
+  className={`min-h-screen font-sans selection:bg-[rgb(var(--primary))]/25 transition-colors duration-300 ${
+    darkMode
+      ? 'bg-[#111111] text-[#F5EEE8]'
+      : 'bg-[rgb(var(--bg))] text-[rgb(var(--text))]'
+  }`}
+>
 
       
       {/* Navigation */}
