@@ -31,6 +31,18 @@ export const portfolioProjects: Project[] = [
   },
 
   {
+    id: 'sustainability-dash',
+    title: 'CPRBS Case Competition',
+    completedDate: 'Mar 2026',
+    category: ProjectCategory.UI_UX,
+    description: 'Comprehensive dashboard prototype for the GIES Case Competition to visualize complex sustainability metrics.',
+    longDescription: 'Focused on Information Architecture to ensure executives can distinguish between high-level ESG goals and granular operational data. Designed interactive user flows for drill-down capabilities.',
+    imageUrl: '/images/Projects/sustainabilityDashboard.png',
+    technologies: ['Figma', 'Data Storytelling', 'Prototyping'],
+    resources: []
+  },
+
+  {
     id: 'hr-dashboard',
     title: 'HR Talent & Profitability Dashboards',
     completedDate: 'Dec 2025',
@@ -58,6 +70,19 @@ export const portfolioProjects: Project[] = [
       { label: 'SQL Documentation', url: 'https://github.com/Eugenie1708/Stablecoin-Analysis/blob/main/miniProject2_Queries.md' },
       { label: 'Full Report', url: 'https://docs.google.com/document/d/1jbcZu080txQ_7ecMS1V4Ng6YI_WYP1E9SKpx6WcHDAw/edit?tab=t.loxixqy8segu#heading=h.ccv4xyuhdihq' }
     ]
+  },
+
+  {
+    id: 'fortune-1000',
+    title: 'Fortune 1000 Landscape Analysis',
+    completedDate: 'Dec 2025',
+    category: ProjectCategory.BI,
+    description: 'Multi-dimensional analysis of the Fortune 1000 landscape to evaluate business performance across sectors, geography, and workforce metrics.',
+    longDescription: 'Visualized disparity between top profitable vs. loss-making companies. Calculated "Revenue Per Employee" to identify high-efficiency sectors. Mapped revenue generation by city/state density and tracked rank shifts (2019 vs 2020) to identify emerging market leaders.',
+    imageUrl: '/images/Projects/fortune1000.png',
+    technologies: ['Tableau', 'Data Storytelling', 'Financial Analysis'],
+    impact: 'Identified high-efficiency sectors versus labor-intensive industries through custom metrics.',
+    resources: []
   },
 
   {
@@ -120,31 +145,6 @@ export const portfolioProjects: Project[] = [
     imageUrl: '/images/Projects/esgUi.png',
     technologies: ['Figma', 'UI/UX Design', 'Prototyping'],
     impact: 'Accelerated product development timeline by 6 months.',
-    resources: []
-  },
-
-  {
-    id: 'sustainability-dash',
-    title: 'Sustainability Analytics Dashboard',
-    completedDate: 'Apr 2024',
-    category: ProjectCategory.UI_UX,
-    description: 'Comprehensive dashboard prototype for the GIES Case Competition to visualize complex sustainability metrics.',
-    longDescription: 'Focused on Information Architecture to ensure executives can distinguish between high-level ESG goals and granular operational data. Designed interactive user flows for drill-down capabilities.',
-    imageUrl: '/images/Projects/sustainabilityDashboard.png',
-    technologies: ['Figma', 'Data Storytelling', 'Prototyping'],
-    resources: []
-  },
-
-  {
-    id: 'fortune-1000',
-    title: 'Fortune 1000 Landscape Analysis',
-    completedDate: 'Dec 2025',
-    category: ProjectCategory.BI,
-    description: 'Multi-dimensional analysis of the Fortune 1000 landscape to evaluate business performance across sectors, geography, and workforce metrics.',
-    longDescription: 'Visualized disparity between top profitable vs. loss-making companies. Calculated "Revenue Per Employee" to identify high-efficiency sectors. Mapped revenue generation by city/state density and tracked rank shifts (2019 vs 2020) to identify emerging market leaders.',
-    imageUrl: '/images/Projects/fortune1000.png',
-    technologies: ['Tableau', 'Data Storytelling', 'Financial Analysis'],
-    impact: 'Identified high-efficiency sectors versus labor-intensive industries through custom metrics.',
     resources: []
   },
 
