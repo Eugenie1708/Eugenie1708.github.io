@@ -47,6 +47,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
           {project.title}
         </h3>
 
+        {project.completedDate && (
+          <p className="text-sm font-semibold text-[#BF7636] dark:text-[#F2B77A] mb-3">
+            {project.completedDate}
+          </p>
+        )}
+
         <p className="text-[#733F34]/70 dark:text-[#F5EEE8]/70 text-sm mb-4 line-clamp-3 flex-1">
           {project.description}
         </p>

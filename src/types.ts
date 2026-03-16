@@ -15,6 +15,7 @@ export interface ProjectResource {
 export interface Project {
   id: string;
   title: string;
+  completedDate?: string;
   category: ProjectCategory;
   description: string;
   longDescription?: string;

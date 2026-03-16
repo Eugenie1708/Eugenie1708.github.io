@@ -15,10 +15,38 @@ export const profileData = {
 };
 
 export const portfolioProjects: Project[] = [
-  // --- Featured Project ---
+  {
+    id: 'customer-segmentation-kmeans',
+    title: 'Customer Segmentation - KMeans',
+    completedDate: 'Mar 2026',
+    category: ProjectCategory.DATA_SCI,
+    description: 'Unsupervised customer segmentation for ShopNow using KMeans on RFM and category-share features to enable targeted marketing and retention strategies.',
+    longDescription: 'Built an end-to-end segmentation workflow for 6,000 customers with data cleaning, selective scaling for RFM variables, and K selection via the elbow method. Finalized 4 clusters that clearly separate inactive users, mid-tier regulars, big spenders, and high-frequency loyal customers, then translated each segment into practical campaign actions for growth and reactivation.',
+    imageUrl: '/images/Projects/KMeansElbowCurve.png',
+    technologies: ['Python', 'Pandas', 'scikit-learn', 'Matplotlib', 'Jupyter Notebook'],
+    impact: 'Produced actionable segment-level strategies for loyalty, premium upsell, frequency growth, and win-back campaigns.',
+    resources: [
+      { label: 'GitHub Repo', url: 'https://github.com/Eugenie1708/Customer-Segmentation-K-Means' }
+    ]
+  },
+
+  {
+    id: 'hr-dashboard',
+    title: 'HR Talent & Profitability Dashboards',
+    completedDate: 'Dec 2025',
+    category: ProjectCategory.BI,
+    description: 'Dynamic dashboards providing executives visibility into labor costs, contract margins, and bid-level profitability for Seventh Sense.',
+    longDescription: 'Streamlined data intake workflows using MS Forms/Excel, reducing reporting cycle time. Documented data workflow and dashboard logic to support team onboarding and client transparency.',
+    imageUrl: '/images/Projects/hrDashboard.png',
+    technologies: ['Power BI', 'DAX', 'Excel', 'Microsoft Forms'],
+    impact: 'Reduced reporting cycle time and improved executive visibility into contract margins.',
+    resources: []
+  },
+
   {
     id: 'usdt-analysis',
     title: 'USDT Competitive Intelligence Report',
+    completedDate: 'Dec 2025',
     category: ProjectCategory.FINANCE,
     description: 'A comprehensive on-chain analysis comparing USDT market positioning against USDC, DAI, and PYUSD using Dune Analytics and Python.',
     longDescription: 'Identified that while USDC dominates DeFi, USDT holds a massive lead in retail/micro-transactions (<$1k). Developed a "Stickiness/Velocity" metric showing most wallet interactions are single-day events. Proposed aggressive Layer 2 integration (Arbitrum/Base) to defend the retail moat.',
@@ -32,21 +60,10 @@ export const portfolioProjects: Project[] = [
     ]
   },
 
-  // --- BI & Strategy ---
-  {
-    id: 'fortune-1000',
-    title: 'Fortune 1000 Landscape Analysis',
-    category: ProjectCategory.BI,
-    description: 'Multi-dimensional analysis of the Fortune 1000 landscape to evaluate business performance across sectors, geography, and workforce metrics.',
-    longDescription: 'Visualized disparity between top profitable vs. loss-making companies. Calculated "Revenue Per Employee" to identify high-efficiency sectors. Mapped revenue generation by city/state density and tracked rank shifts (2019 vs 2020) to identify emerging market leaders.',
-    imageUrl: '/images/Projects/fortune1000.png',
-    technologies: ['Tableau', 'Data Storytelling', 'Financial Analysis'],
-    impact: 'Identified high-efficiency sectors versus labor-intensive industries through custom metrics.',
-    resources: []
-  },
   {
     id: 'yelp-strategy',
     title: 'Business Location & Strategy Analytics',
+    completedDate: 'Nov 2025',
     category: ProjectCategory.BI,
     description: 'Analyzed store-opening strategies by modeling customer check-ins, ratings, and geographic patterns using the Yelp Dataset.',
     longDescription: 'Built an end-to-end data pipeline: Python preprocessing → Azure SQL upload → SQL analytics queries. Produced insights on optimal business positioning using SQL aggregations, joins, and time-based patterns.',
@@ -54,45 +71,23 @@ export const portfolioProjects: Project[] = [
     technologies: ['Python', 'Azure SQL', 'SQL', 'Data Modeling'],
     resources: []
   },
+
   {
-    id: 'hr-dashboard',
-    title: 'HR Talent & Profitability Dashboards',
-    category: ProjectCategory.BI,
-    description: 'Dynamic dashboards providing executives visibility into labor costs, contract margins, and bid-level profitability for Seventh Sense.',
-    longDescription: 'Streamlined data intake workflows using MS Forms/Excel, reducing reporting cycle time. Documented data workflow and dashboard logic to support team onboarding and client transparency.',
-    imageUrl: '/images/Projects/hrDashboard.png',
-    technologies: ['Power BI', 'DAX', 'Excel', 'Microsoft Forms'],
-    impact: 'Reduced reporting cycle time and improved executive visibility into contract margins.',
+    id: 'digital-adaptation',
+    title: 'Digital Adaptation Analysis',
+    completedDate: 'Dec 2024',
+    category: ProjectCategory.DATA_SCI,
+    description: 'Regression and factor analyses to evaluate digital development adaptation across employed age groups.',
+    longDescription: 'Identified low digital adaptation levels among urban, well-educated women. Provided actionable recommendations based on statistical findings using R and Python.',
+    imageUrl: '/images/Projects/digitalAdaptation.png',
+    technologies: ['Python', 'R', 'Statistical Analysis'],
     resources: []
   },
 
-  // --- UI/UX ---
-  {
-    id: 'esg-ui',
-    title: 'ESG Management System Interface',
-    category: ProjectCategory.UI_UX,
-    description: 'High-fidelity user interface for an enterprise-level ESG management system at SYSTEX Corp.',
-    longDescription: 'Translated complex carbon-emission data requirements into an intuitive user journey. The clarified design requirements bridged the gap between business needs and engineering.',
-    imageUrl: '/images/Projects/esgUi.png',
-    technologies: ['Figma', 'UI/UX Design', 'Prototyping'],
-    impact: 'Accelerated product development timeline by 6 months.',
-    resources: []
-  },
-  {
-    id: 'sustainability-dash',
-    title: 'Sustainability Analytics Dashboard',
-    category: ProjectCategory.UI_UX,
-    description: 'Comprehensive dashboard prototype for the GIES Case Competition to visualize complex sustainability metrics.',
-    longDescription: 'Focused on Information Architecture to ensure executives can distinguish between high-level ESG goals and granular operational data. Designed interactive user flows for drill-down capabilities.',
-    imageUrl: '/images/Projects/sustainabilityDashboard.png',
-    technologies: ['Figma', 'Data Storytelling', 'Prototyping'],
-    resources: []
-  },
-
-  // --- Data Science ---
   {
     id: 'love-satisfaction-research',
     title: 'Relationship Satisfaction & Parenting Styles',
+    completedDate: 'Nov 2024',
     category: ProjectCategory.DATA_SCI,
     description: 'Statistical research (Jan-Nov 2024) analyzing the correlation between attachment styles, parenting, and relationship satisfaction for ages 18-25.',
     longDescription: 'Developed and executed an online survey focused on romantic relationships among individuals aged 18-25, gathering around 400 responses. Applied Python and R to perform data preprocessing, ANOVA, clustering, and regression analyses, revealing a positive correlation between responsive parenting styles and relationship satisfaction. Led a team in brainstorming research themes, supervised literature review processes, and facilitated group discussions to align objectives.',
@@ -101,57 +96,11 @@ export const portfolioProjects: Project[] = [
     impact: 'Demonstrated ability to handle large survey data, text processing, and lead social science research projects.',
     resources: []
   },
-  /* Additional Data Science Projects{
-    id: 'substance-use',
-    title: 'Substance Use Prediction App',
-    category: ProjectCategory.DATA_SCI,
-    description: 'Interactive web application to forecast substance use tendencies using K-Means and KNN models.',
-    longDescription: 'Developed a full-stack application implementing predictive models directly within the application logic. Preprocessed raw data using Python to ensure quality and consistency.',
-    imageUrl: 'https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&q=80&w=1000',
-    technologies: ['Python', 'Scikit-learn', 'PHP', 'SQL'],
-    resources: []
-  },
-  */
- /*
-  {
-    id: 'traffic-accidents',
-    title: 'Taiwan Traffic Accident Analysis',
-    category: ProjectCategory.DATA_SCI,
-    description: 'Advanced analysis of Taiwan’s A2-level traffic accident dataset to predict fatalities among at-fault drivers.',
-    longDescription: 'Implemented classification models (KNN, K-Means) to analyze risk factors and predict outcomes for traffic safety improvements.',
-    imageUrl: 'https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?auto=format&fit=crop&q=80&w=1000',
-    technologies: ['Python', 'Pandas', 'Scikit-learn'],
-    resources: []
-  },
-  */
-  {
-    id: 'digital-adaptation',
-    title: 'Digital Adaptation Analysis',
-    category: ProjectCategory.DATA_SCI,
-    description: 'Regression and factor analyses to evaluate digital development adaptation across employed age groups.',
-    longDescription: 'Identified low digital adaptation levels among urban, well-educated women. Provided actionable recommendations based on statistical findings using R and Python.',
-    imageUrl: '/images/Projects/digitalAdaptation.png',
-    technologies: ['Python', 'R', 'Statistical Analysis'],
-    resources: []
-  },
-  {
-    id: 'customer-segmentation-kmeans',
-    title: 'Customer Segmentation - KMeans',
-    category: ProjectCategory.DATA_SCI,
-    description: 'Unsupervised customer segmentation for ShopNow using KMeans on RFM and category-share features to enable targeted marketing and retention strategies.',
-    longDescription: 'Built an end-to-end segmentation workflow for 6,000 customers with data cleaning, selective scaling for RFM variables, and K selection via the elbow method. Finalized 4 clusters that clearly separate inactive users, mid-tier regulars, big spenders, and high-frequency loyal customers, then translated each segment into practical campaign actions for growth and reactivation.',
-    imageUrl: '/images/Projects/KMeansElbowCurve.png',
-    technologies: ['Python', 'Pandas', 'scikit-learn', 'Matplotlib', 'Jupyter Notebook'],
-    impact: 'Produced actionable segment-level strategies for loyalty, premium upsell, frequency growth, and win-back campaigns.',
-    resources: [
-      { label: 'GitHub Repo', url: 'https://github.com/Eugenie1708/Customer-Segmentation-K-Means' }
-    ]
-  },
 
-  // --- Data Engineering ---
   {
     id: 'esg-pipeline',
     title: 'Automated ESG Data Pipeline',
+    completedDate: 'Oct 2024',
     category: ProjectCategory.DATA_ENG,
     description: 'Automated collection of external carbon-related data reducing manual effort for SYSTEX Corp.',
     longDescription: 'Built scripts using Selenium and BeautifulSoup. Integrated Python with Power Automate and SQL for seamless data ingestion. Achieved 3rd place in Internship Proposal Competition.',
@@ -160,6 +109,45 @@ export const portfolioProjects: Project[] = [
     impact: 'Won 3rd place in Internship Proposal Competition.',
     resources: []
   },
+
+  {
+    id: 'esg-ui',
+    title: 'ESG Management System Interface',
+    completedDate: 'Aug 2024',
+    category: ProjectCategory.UI_UX,
+    description: 'High-fidelity user interface for an enterprise-level ESG management system at SYSTEX Corp.',
+    longDescription: 'Translated complex carbon-emission data requirements into an intuitive user journey. The clarified design requirements bridged the gap between business needs and engineering.',
+    imageUrl: '/images/Projects/esgUi.png',
+    technologies: ['Figma', 'UI/UX Design', 'Prototyping'],
+    impact: 'Accelerated product development timeline by 6 months.',
+    resources: []
+  },
+
+  {
+    id: 'sustainability-dash',
+    title: 'Sustainability Analytics Dashboard',
+    completedDate: 'Apr 2024',
+    category: ProjectCategory.UI_UX,
+    description: 'Comprehensive dashboard prototype for the GIES Case Competition to visualize complex sustainability metrics.',
+    longDescription: 'Focused on Information Architecture to ensure executives can distinguish between high-level ESG goals and granular operational data. Designed interactive user flows for drill-down capabilities.',
+    imageUrl: '/images/Projects/sustainabilityDashboard.png',
+    technologies: ['Figma', 'Data Storytelling', 'Prototyping'],
+    resources: []
+  },
+
+  {
+    id: 'fortune-1000',
+    title: 'Fortune 1000 Landscape Analysis',
+    completedDate: 'Dec 2025',
+    category: ProjectCategory.BI,
+    description: 'Multi-dimensional analysis of the Fortune 1000 landscape to evaluate business performance across sectors, geography, and workforce metrics.',
+    longDescription: 'Visualized disparity between top profitable vs. loss-making companies. Calculated "Revenue Per Employee" to identify high-efficiency sectors. Mapped revenue generation by city/state density and tracked rank shifts (2019 vs 2020) to identify emerging market leaders.',
+    imageUrl: '/images/Projects/fortune1000.png',
+    technologies: ['Tableau', 'Data Storytelling', 'Financial Analysis'],
+    impact: 'Identified high-efficiency sectors versus labor-intensive industries through custom metrics.',
+    resources: []
+  },
+
   /*
   {
     id: 'vc-tooling',
