@@ -35,11 +35,15 @@ export const portfolioProjects: Project[] = [
     title: 'CPRBS Case Competition',
     completedDate: 'Mar 2026',
     category: ProjectCategory.UI_UX,
-    description: 'Comprehensive dashboard prototype for the GIES Case Competition to visualize complex sustainability metrics.',
-    longDescription: 'Focused on Information Architecture to ensure executives can distinguish between high-level ESG goals and granular operational data. Designed interactive user flows for drill-down capabilities.',
+    description: 'Dash4Earth sustainability intelligence platform prototype for the Gies Case Competition, advancing to the Final Round.',
+    longDescription: 'Built an interactive sustainability intelligence system connecting SDG-aligned research topics, faculty expertise, publications, and industry insights. The prototype includes a Sustainability Intelligence Dashboard, Faculty Expertise Profiles, AI Faculty Matcher, and Research Explorer to make sustainability research more discoverable and actionable.',
     imageUrl: '/images/Projects/sustainabilityDashboard.png',
     technologies: ['Figma', 'Data Storytelling', 'Prototyping'],
-    resources: []
+    impact: 'Advanced to the Final Round in the Gies Case Competition.',
+    resources: [
+      { label: 'Demo Link', url: 'https://eugenie1708.github.io/case-competition/marketing' },
+      { label: 'Prototype Link', url: 'https://eugenie1708.github.io/case-competition/' }
+    ]
   },
 
   {
@@ -98,6 +102,19 @@ export const portfolioProjects: Project[] = [
   },
 
   {
+    id: 'esg-ui',
+    title: 'ESG Management System Interface',
+    completedDate: 'Jun 2025',
+    category: ProjectCategory.UI_UX,
+    description: 'High-fidelity user interface for an enterprise-level ESG management system at SYSTEX Corp.',
+    longDescription: 'Translated complex carbon-emission data requirements into an intuitive user journey. The clarified design requirements bridged the gap between business needs and engineering.',
+    imageUrl: '/images/Projects/esgUi.png',
+    technologies: ['Figma', 'UI/UX Design', 'Prototyping'],
+    impact: 'Accelerated product development timeline by 6 months.',
+    resources: []
+  },
+
+  {
     id: 'digital-adaptation',
     title: 'Digital Adaptation Analysis',
     completedDate: 'Dec 2024',
@@ -132,19 +149,6 @@ export const portfolioProjects: Project[] = [
     imageUrl: '/images/Projects/dataPipeline.png',
     technologies: ['Python', 'Selenium', 'Power Automate', 'SQL'],
     impact: 'Won 3rd place in Internship Proposal Competition.',
-    resources: []
-  },
-
-  {
-    id: 'esg-ui',
-    title: 'ESG Management System Interface',
-    completedDate: 'Aug 2024',
-    category: ProjectCategory.UI_UX,
-    description: 'High-fidelity user interface for an enterprise-level ESG management system at SYSTEX Corp.',
-    longDescription: 'Translated complex carbon-emission data requirements into an intuitive user journey. The clarified design requirements bridged the gap between business needs and engineering.',
-    imageUrl: '/images/Projects/esgUi.png',
-    technologies: ['Figma', 'UI/UX Design', 'Prototyping'],
-    impact: 'Accelerated product development timeline by 6 months.',
     resources: []
   },
 
