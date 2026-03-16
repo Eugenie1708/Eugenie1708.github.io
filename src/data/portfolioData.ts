@@ -134,6 +134,19 @@ export const portfolioProjects: Project[] = [
     technologies: ['Python', 'R', 'Statistical Analysis'],
     resources: []
   },
+  {
+    id: 'customer-segmentation-kmeans',
+    title: 'Customer Segmentation - KMeans',
+    category: ProjectCategory.DATA_SCI,
+    description: 'Unsupervised customer segmentation for ShopNow using KMeans on RFM and category-share features to enable targeted marketing and retention strategies.',
+    longDescription: 'Built an end-to-end segmentation workflow for 6,000 customers with data cleaning, selective scaling for RFM variables, and K selection via the elbow method. Finalized 4 clusters that clearly separate inactive users, mid-tier regulars, big spenders, and high-frequency loyal customers, then translated each segment into practical campaign actions for growth and reactivation.',
+    imageUrl: '/images/Projects/KMeansElbowCurve.png',
+    technologies: ['Python', 'Pandas', 'scikit-learn', 'Matplotlib', 'Jupyter Notebook'],
+    impact: 'Produced actionable segment-level strategies for loyalty, premium upsell, frequency growth, and win-back campaigns.',
+    resources: [
+      { label: 'GitHub Repo', url: 'https://github.com/Eugenie1708/Customer-Segmentation-K-Means' }
+    ]
+  },
 
   // --- Data Engineering ---
   {
