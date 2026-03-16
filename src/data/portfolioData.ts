@@ -37,7 +37,7 @@ export const portfolioProjects: Project[] = [
     category: ProjectCategory.UI_UX,
     description: 'Dash4Earth sustainability intelligence platform prototype for the Gies Case Competition, advancing to the Final Round.',
     longDescription: 'Built an interactive sustainability intelligence system connecting SDG-aligned research topics, faculty expertise, publications, and industry insights. The prototype includes a Sustainability Intelligence Dashboard, Faculty Expertise Profiles, AI Faculty Matcher, and Research Explorer to make sustainability research more discoverable and actionable.',
-    imageUrl: '/images/Projects/sustainabilityDashboard.png',
+    imageUrl: '/images/Projects/CaseCompetition.png',
     technologies: ['Figma', 'Data Storytelling', 'Prototyping'],
     impact: 'Advanced to the Final Round in the Gies Case Competition.',
     resources: [
